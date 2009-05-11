@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>iMity - The iPhone proximity based reminder system.</title>
+<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+<style type="text/css" media="screen">@import "/static/iui/iui.css";</style>
+<script type="application/x-javascript" src="/static/iui/iui.js"></script>
+</head>
+
+<body>
+    <div class="toolbar">
+        <h1 id="pageTitle">Add Reminder</h1>
+    </div>
+    <div id="home" class="panel" selected="true">
+       <form id="searchForm" class="dialog" action="search.php">
+        <fieldset>
+            <label>Name:</label>
+            <input id="item" type="text" name="name"/>
+            <select name="direction">
+                <option value="">Location</option>
+                <option value="home">Home</option>
+                <option value="work">Work</option>
+                <option value="supermarket">Supermarket</option>
+                <option value="playground">Playground</option>
+                <option value="toms_house">Tom's House</option>
+            </select>            
+            <br>
+            <h1>Alert me on Entry</h1><input type="radio" name="alert_type"><br>
+            <h1>Alert me on Exit</h1><input type="radio" name="alert_type"><br>
+            
+        </fieldset>
+      </form>
+        
+    </div>
+        
+</body>
+</html>
